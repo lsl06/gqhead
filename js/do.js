@@ -31,9 +31,9 @@ function loadImage() {
 
 function drawToCanvas(img1, img2){
     var cvs = document.getElementById('cvs');
-    var size = 300;
-    cvs.width = size;
-    cvs.height = size;
+    // var size = 300;
+    // cvs.width = size;
+    // cvs.height = size;
     var ctx = cvs.getContext('2d');
     var image1 = new Image;
     image1.src = img1;
