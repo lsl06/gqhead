@@ -1,5 +1,5 @@
 document.getElementById('download').onclick = function(ev) {
-    if (document.getElementById('avatar_img').src.indexOf('007VUoSNly8h6oz2e4hwtj30b40b4t8m')>-1) 
+    if (document.getElementById('avatar_img').src.indexOf('d.png')>-1) 
         return alert('请先点击”上传头像”再进行下载');
 
     var canvas = document.getElementById('cvs');
@@ -16,12 +16,8 @@ document.getElementById('download').onclick = function(ev) {
 
 document.getElementById('next').onclick = function(ev) {
     var current = parseInt(document.getElementById('avatar_template').alt);
-    ob = {
-        0:"https://pic1.imgdb.cn/item/6336fa0a16f2c2beb1d000ac.png",
-        1:"https://pic1.imgdb.cn/item/6336fa0d16f2c2beb1d00432.png"
-    }
     current = (current + 1) % 2;
-    document.getElementById('avatar_template').src = ob[current];
+    document.getElementById('avatar_template').src = 'img/hat' + current + '.png';
     document.getElementById('avatar_template').alt = current;
     loadImage();
 }
