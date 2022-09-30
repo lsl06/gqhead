@@ -177,8 +177,8 @@ button {
 .sy {
     position: fixed;
     left: 0px;
-    color: rgba(66, 66, 66, 0.2);
-    font-size: xx-small;
+    color: rgba(66, 66, 66, 0.33);
+    font-size: x-small;
     z-index: 1919810;
 }
 
