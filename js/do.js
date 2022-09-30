@@ -17,8 +17,8 @@ document.getElementById('download').onclick = function(ev) {
 document.getElementById('next').onclick = function(ev) {
     var current = parseInt(document.getElementById('avatar_template').alt);
     ob = {
-        0:"https://tva1.sinaimg.cn/large/007VUoSNly8h6oz29de8xj30nc0ncjs8.jpg",
-        1:"https://tva4.sinaimg.cn/large/007VUoSNly8h6oz49svvqj30nc0ncwfc.jpg"
+        0:"https://pic1.imgdb.cn/item/6336fa0a16f2c2beb1d000ac.png",
+        1:"https://pic1.imgdb.cn/item/6336fa0d16f2c2beb1d00432.png"
     }
     current = (current + 1) % 2;
     document.getElementById('avatar_template').src = ob[current];
