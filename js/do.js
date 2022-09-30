@@ -1,5 +1,5 @@
 document.getElementById('download').onclick = function(ev) {
-    if (document.getElementById('avatar_img').src.indexOf('d.png')>-1) 
+    if (document.getElementById('avatar_img').src.indexOf('#d#')>-1) 
         return alert('请先点击”上传头像”再进行下载');
 
     var canvas = document.getElementById('cvs');
