@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <title>国庆头像</title>
+    <link rel="stylesheet" href="css/view.css">
+    <script>
+        setTimeout(() => {
+            $(".loading-div").hide();
+        }, 2000);
+    </script>
+</head>
+
+<body>
+    <!-- <article>
+        <section>
+            <p>
+                <input type="file" name="" id="upload" accept="image/*" onchange="loadImage()">
+            </p>
+            <p id="avatar">
+                <img src="./img/hat0.png" alt="0" id="avatar_template">
+                <img src="" alt="" id="avatar_img">
+            </p>
+            <p class="hide">
+                <canvas width="500" height="500" id="cvs"></canvas>
+            </p>
+            <p class="control">
+                <button id="download">下载</button>
+                <button id="next">换一个</button>
+            </p>
+        </section>
+    </article> -->
+    <div class="ld loading-div">
+        <div style="position: fixed;top: 45%;left:47%">
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw loading-div"></i>
+            <p>加载中,请稍候...</p>
+        </div>
+
+    </div>
+    <div>
+        <div id="avatar" width="300" height="300" class="yuanjiao">
+            <img src="./img/hat0.png" alt="0" id="avatar_template">
+            <img src="./img/d.png" alt="" id="avatar_img">
+
+        </div>
+        <input type="file" name="" id="upload" accept="image/*" onchange="loadImage()" style="display: none;">
+        <button id="file" type="file" class="ant-btn ant-btn-red" onclick="clickFile()">上传头像</button>
+        <br>
+        <button id="next" class="ant-btn ant-btn-red">更换图案</button>
+        <br>
+        <button id="download" class="ant-btn ant-btn-red">下载头像</button>
+    </div>
+
+    <p class="hide">
+        <canvas width="500" height="500" id="cvs"></canvas>
+    </p>
+
+    <footer class="footer">
+        <font class="sy" size="8px">hrb 73 12 lsl</font>
+        <script>
+            function clickFile() {
+                const input = document.querySelector('#upload')
+                input.click()
+            }
+            var func = function (e) {
+                e.preventDefault && e.preventDefault();
+                e.returnValue = false;
+                e.stopPropagation && e.stopPropagation();
+                return false;
+            };
+            window.addEventListener('touchmove', func, { passive: false })
+        </script>
+        <script src="js/do.js"></script>
+    </footer>
+</body>
+
+</html>
