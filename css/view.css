@@ -152,9 +152,10 @@ button {
     position: fixed;
     left: 0px;
     bottom: 0px;
-    width: 100%;
+    width: 16%;
     height: 66px;
     z-index: 9999;
+    /* background-color: #1890ff; */
 }
 
 .ld {
